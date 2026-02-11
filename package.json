@@ -1,0 +1,23 @@
+{
+  "name": "michael-ciniawsky.cloud",
+  "version": "0.1.0",
+  "description": "API for michael-ciniawsky.cloud",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michael-ciniawsky/cloud.git"
+  },
+  "author": "Michael Ciniawsky <michael.ciniawsky@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michael-ciniawsky/cloud/issues"
+  },
+  "homepage": "https://github.com/michael-ciniawsky/cloud#readme",
+  "dependencies": {
+    "hono": "^4.0.0"
+  }
+}
