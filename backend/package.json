@@ -1,0 +1,42 @@
+{
+  "name": "michael-ciniawsky.cloud",
+  "version": "0.1.0",
+  "description": "API for michael-ciniawsky.cloud",
+  "main": "index.js",
+  "type": "module",
+  "imports": {
+    "#config": "./src/config.js",
+
+    "#db/*.js": "./src/database/*.js",
+
+    "#routes": "./src/routes.js",
+    "#routes/*.js": "./src/routes/*.js",
+
+    "#middleware": "./src/middleware.js",
+    "#middleware/*.js": "./src/middleware/*.js",
+
+    "#controllers": "./src/controllers.js",
+    "#controllers/*.js": "./src/controllers/*.js"
+  },
+  "exports": {},
+  "dependencies": {
+    "@hono/node-server": "^1.19.9",
+    "hono": "^4.0.0",
+    "ws": "^8.19.0"
+  },
+  "scripts": {
+    "dev": "node --env-file=.env --watch ./server.js",
+    "test": "node --test",
+    "start": "node --env-file=.env ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michael-ciniawsky/cloud.git"
+  },
+  "author": "Michael Ciniawsky <michael.ciniawsky@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michael-ciniawsky/cloud/issues"
+  },
+  "homepage": "https://github.com/michael-ciniawsky/cloud#readme"
+}
